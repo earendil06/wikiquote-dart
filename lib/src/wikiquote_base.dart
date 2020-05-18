@@ -64,7 +64,7 @@ class Wikiquote {
         res.add(Quote()..quote = element.text.replaceAll(author.text, '')..author = author.text);
       }
     });
-    return [];
+    return res;
   }
 
   Future<List<String>> randomTitles(String lang, int maxTitles) async {
